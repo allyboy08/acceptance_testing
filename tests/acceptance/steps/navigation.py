@@ -1,8 +1,10 @@
 from behave import *
 from selenium import webdriver
-from tests.acceptance.page_model.home_page import HomePage
-from tests.acceptance.page_model.blog_page import BlogPage
-from tests.acceptance.page_model.new_post_page import NewPostPage
+import sys
+sys.path.append("tests/acceptance/page_model")
+from page_model.home_page import HomePage
+from page_model.blog_page import BlogPage
+from page_model.new_post_page import NewPostPage
 
 
 use_step_matcher('re')

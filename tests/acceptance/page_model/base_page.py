@@ -1,4 +1,6 @@
-from tests.acceptance.locators.base_page import BasePageLocators
+import sys
+sys.path.append("tests/acceptance/locators")
+from locators.base_page import BasePageLocators
 
 class BasePage:
     def __init__(self, driver):

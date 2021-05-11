@@ -1,6 +1,9 @@
 from selenium.webdriver.common.by import By
-from tests.acceptance.locators.new_post_page import NewPostLocators
-from tests.acceptance.page_model.base_page import BasePage
+import sys
+sys.path.append("tests/acceptance/locators")
+sys.path.append("tests/acceptance/page_model")
+from locators.new_post_page import NewPostLocators
+from page_model.base_page import BasePage
 
 
 class NewPostPage(BasePage):

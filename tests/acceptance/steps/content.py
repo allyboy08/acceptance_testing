@@ -1,6 +1,8 @@
 from behave import *
-from tests.acceptance.page_model.base_page import BasePage
-from tests.acceptance.page_model.blog_page import BlogPage
+import sys
+sys.path.append("tests/acceptance/page_model")
+from page_model.base_page import BasePage
+from page_model.blog_page import BlogPage
 
 use_step_matcher('re')
 

@@ -1,5 +1,8 @@
-from tests.acceptance.locators.home_page import HomePageLocators
-from tests.acceptance.page_model.base_page import BasePage
+import sys
+sys.path.append("tests/acceptance/page_model")
+sys.path.append("tests/acceptance/locators")
+from locators.home_page import HomePageLocators
+from page_model.base_page import BasePage
 
 class HomePage(BasePage):
     @property    
